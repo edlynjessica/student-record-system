@@ -1,0 +1,125 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #4f3222;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #d4ac6e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  border-radius: 5%;
+}
+
+button {
+  background: #8b6f47;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  justify-self: center;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #674d3c;
+}
+
+td button {
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between icon and text */
+}
+
+/* Style for Edit Button */
+.edit-btn {
+  background-color: #a67c52; /* Soft mocha */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #8c6239; /* Darker mocha */
+}
+
+/* Style for Delete Button */
+.delete-btn {
+  background-color: #bf5f5f; /* Warm terracotta red */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #a94a4a; /* Deeper red */
+}
+.editing {
+  background-color: #fff3cd !important;
+}
+
+
+/*dark mode*/
+
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .container {
+  background: #2f2f2f;
+}
+
+body.dark table {
+  background: #444;
+  color: #eee;
+}
+
+body.dark th, body.dark td {
+  border: 1px solid #666;
+}
+
+body.dark input,
+body.dark select,
+body.dark button {
+  background: #555;
+  color: #fff;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
