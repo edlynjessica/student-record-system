@@ -197,3 +197,21 @@ body.dark select {
   color: #f2e8dc !important;
   border: 3px solid #6c4831;
 }
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-responsive table {
+  width: 100%;
+  min-width: 600px; /* Adjust if needed */
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  table, th, td {
+    font-size: 14px;
+  }
+}
