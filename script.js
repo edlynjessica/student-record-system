@@ -69,3 +69,16 @@ form.addEventListener("submit", function (e) {
 
   form.reset();
 });
+
+const darkBtn = document.getElementById("darkModeBtn");
+
+darkBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+  
+  // Toggle icon
+  if (document.body.classList.contains("dark")) {
+    darkBtn.textContent = "☀️"; // Light mode icon
+  } else {
+    darkBtn.textContent = "🌙"; // Dark mode icon
+  }
+});

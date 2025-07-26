@@ -88,38 +88,112 @@ td button {
 }
 
 
-/*dark mode*/
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.dark-toggle-btn {
+  background-color: #8b6f47;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.dark-toggle-btn:hover {
+  background-color: #674d3c;
+}
+
+/* 🌑 DARK MODE STYLES */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container,
+input,
+select,
+button,
+table,
+th,
+td {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
 body.dark {
-  background: #1e1e1e;
-  color: #eee;
+  background-color: #000000; /* full black for true dark mode */
+  color: #f2e8dc;
 }
 
 body.dark .container {
-  background: #2f2f2f;
-}
-
-body.dark table {
-  background: #444;
-  color: #eee;
-}
-
-body.dark th, body.dark td {
-  border: 1px solid #666;
+  background-color: #3e2614; /* lighter, readable brown for form */
+  color: #f2e8dc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 body.dark input,
 body.dark select,
 body.dark button {
-  background: #555;
-  color: #fff;
+  background-color: #4a2e1b;
+  color: #f2e8dc;
+  border: 1px solid #6c4831;
 }
 
-.toggle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: white;
+body.dark table {
+  background-color: #2e1a0c;
+  color: #f2e8dc;
+}
+
+body.dark th,
+body.dark td {
+  background-color: #2e1a0c;
+  color: #f2e8dc;
+  border: 1px solid #3a2415;
+}
+
+body.dark .edit-btn {
+  background-color: #a67c52;
+}
+
+body.dark .edit-btn:hover {
+  background-color: #8c6239;
+}
+
+body.dark .delete-btn {
+  background-color: #bf5f5f;
+}
+
+body.dark .delete-btn:hover {
+  background-color: #a94a4a;
+}
+
+body.dark .footer {
+  color: #ccc;
+}
+
+
+
+body.dark select {
+  background-color: #4a2e1b !important;
+  color: #f2e8dc !important;
+}
+
+body.dark select {
+  background-color: #4a2e1b !important;
+  color: #f2e8dc !important;
+  border: 3px solid #6c4831;
 }
